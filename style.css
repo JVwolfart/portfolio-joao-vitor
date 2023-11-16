@@ -75,6 +75,7 @@ nav {
 
 .ativo {
     text-decoration: underline;
+    text-decoration-thickness: 5px;
 }
 
 .menu_link:hover {
