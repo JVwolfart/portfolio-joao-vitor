@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/34761a5074.js" crossorigin="anonymous"></script>
+        <script defer src="components/footer.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <title>Entre em contato</title>
+    </head>
+<body>
+    <header class="cabecalho">
+        <button class="hamburguer">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <div class="menu-desktop">
+                <ul class="menu_links">
+                    <li><a href="index.html" class="menu_link">Home</a></li>
+                    <li><a href="sobre.html" class="menu_link">Sobre mim</a></li>
+                    <li><a href="habilidades.html" class="menu_link">Habilidades</a></li>
+                    <li><a href="contato.html" class="menu_link ativo">Contatos</a></li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="menu-mobile">
+                <ul class="menu-mobile-links">
+                    <li><a href="index.html" class="menu-mobile-link">Home</a></li>
+                    <li><a href="sobre.html" class="menu-mobile-link">Sobre mim</a></li>
+                    <li><a href="habilidades.html" class="menu-mobile-link">Habilidades</a></li>
+                    <li><a href="contato.html" class="menu-mobile-link ativo">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="conteudo">
+            <div class="conteudo-info">
+                <p class="conteudo-titulo" style="font-size: 36px;">Entre em <span>contato</span></p>
+                <form action="https://formsubmit.co/56acb83851d529fe62e246af7f814e22" class="form-contato" method="post">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" placeholder="Preencha seu nome" id="nome" name="name" class="form-input" required>
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" placeholder="seuemail@email.com.br" id="email" name="email" class="form-input" required>
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem..." class="msg-input" name="message" required></textarea>
+                    <button type="submit" class="btn-submit">Enviar</button>
+
+                    <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div class="conteudo-img">
+                <img src="img/JV1.jpeg" alt="João Vitor Wolfart">
+            </div>
+        </section>
+    </main>
+    <footer-component></footer-component>
+</body>
+<script src="index.js"></script>
+</html>
